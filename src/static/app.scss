@@ -1,0 +1,139 @@
+
+body {
+	background: #fff;
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+h1 {
+	font-size: 3rem;
+}
+
+
+
+.button-group {
+	padding: 10px 0;
+}
+
+.button {
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.875rem;
+	padding: 5px 10px;
+	margin-right: 10px;
+
+	&--complete {
+		background: green;
+		margin-right: 20px;
+	}
+
+	&--delete,
+	&--clear-all {
+		background: red;
+	}
+
+	&--increase,
+	&--decrease {
+		background: blue;
+	}
+}
+
+
+
+.shopping-basket-app {
+	margin: 0 auto;
+	max-width: 500px;
+
+	&__count {
+		font-size: 1rem;
+		margin-bottom: 20px;
+	}
+
+	&__add {
+		margin-bottom: 20px;
+
+		&__label {
+			float: left;
+			font-size: 1rem;
+			line-height: 1.5;
+			margin-right: 10px;
+		}
+	}
+
+	&__text-input {
+		font-size: 1rem;
+	}
+
+	&__todo-list {
+		list-style-type: none;
+		margin: 40px 0 0 0;
+		padding: 0;
+
+		&__item {
+			border-bottom: 1px solid #ddd;
+			display: block;
+			font-size: 1rem;
+			padding: 20px 0;
+
+			&--complete {
+				color: #ccc;
+			}
+
+			&:first-child {
+				border-top: 1px solid #ddd;
+			}
+
+			&__status {
+				font-size: 0.875rem;
+			}
+
+			&__heading {
+				cursor: pointer;
+				font-size: 1rem;
+				margin-top: 0;
+			}
+
+			&__change-decription-text {
+				font-size: 1rem;
+				margin-bottom: 20px;
+				width: 100%;
+			}
+		}
+	}
+
+	&__basket_total {
+		font-size: 1rem;
+		margin-top: 30px;
+
+		&__row {
+			border-bottom: 1px solid #ddd;
+			padding: 10px 0;
+
+			&__figure {
+				float: right;
+			}
+		}
+	}
+
+	.shopping-basket-app__alert {
+		border: 1px solid #ddd;
+		font-size: 1rem;
+		padding: 10px;
+
+		&--error {
+			background: red;
+			color: white;
+		}
+	}
+}
+
+.hidden {
+	display: none !important;
+}
